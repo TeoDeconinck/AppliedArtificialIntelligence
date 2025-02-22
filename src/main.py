@@ -1,1 +1,1 @@
-print("Hallo, IntelliJ!")
+print("Hallo, World!")

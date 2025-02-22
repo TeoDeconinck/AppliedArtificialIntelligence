@@ -1,0 +1,11 @@
+getal1 = int(input())
+getal2 = int(input())
+getal3 = int(input())
+getal4 = int(input())
+getal5 = int(input())
+
+print(getal5)
+print(getal4)
+print(getal3)
+print(getal2)
+print(getal1)
