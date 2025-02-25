@@ -38,3 +38,20 @@
 #
 # Uitvoer:
 # 3
+
+frequentieTabel = [0] * 100
+getal = int(input())
+
+while 0 <= getal < 100:
+    frequentieTabel[getal] += 1
+    getal = int(input())
+
+MeestFrequenteGetal = 0
+i = 0
+while i < 100:
+    if frequentieTabel[i] => frequentieTabel[MeestFrequenteGetal]: MeestFrequenteGetal = i
+    i += 1
+if MeestFrequenteGetal == 0:
+    print(0, end = '')
+else:
+    print(MeestFrequenteGetal, end = '')
