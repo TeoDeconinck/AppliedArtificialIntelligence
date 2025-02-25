@@ -4,7 +4,8 @@
 # Gehele getallen in het interval [0,99]. Stop van zodra je iets krijgt dat daar buiten valt.
 #
 # Uitvoer
-# Het getal dat het meest voorkwam in de invoerstroom. Als bepaalde getallen evenveel voorkwamen dan druk je enkel het kleinste af. Nul in het geval er geen geschikte getallen werden opgegeven. Neem na het afdrukken geen nieuwe lijn.
+# Het getal dat het meest voorkwam in de invoerstroom. Als bepaalde getallen evenveel voorkwamen dan druk je enkel het kleinste af.
+# Nul in het geval er geen geschikte getallen werden opgegeven. Neem na het afdrukken geen nieuwe lijn.
 #
 # Voorbeeld
 # Invoer:
@@ -33,3 +34,18 @@
 #
 # Uitvoer:
 # 1a
+
+getalInRange = True
+counter = 0
+getallen = []
+
+while getalInRange:
+    getal = int(input())
+    if getal > 0 or getal < 99:
+        getallen[counter] = getal
+    else:
+        getalInRange = False
+    counter +=1
+
+meest_voorkomende = min(getallen.keys(), key=lambda x: (-getallen[x], x))
+print(meest_voorkomende, end='')
