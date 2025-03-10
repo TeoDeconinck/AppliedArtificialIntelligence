@@ -27,7 +27,7 @@
 
 inGelezenGetallen = [] * 100
 
-i =0
+i = 0
 
 while i <= len(inGelezenGetallen):
     inGelezenGetallen[i] = int(input())

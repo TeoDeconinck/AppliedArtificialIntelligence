@@ -41,6 +41,7 @@
 
 frequentieTabel = [0] * 100
 
+
 getal = int(input())
 
 while 0 <= getal < 100:

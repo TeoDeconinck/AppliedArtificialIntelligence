@@ -1,7 +1,15 @@
+basis = int(input())
+while basis <= 0:
+    basis = int(input())
 
-
-
-
+Lijnen = 1
+while Lijnen <= basis:
+    aantlSterren = basis - Lijnen + 1
+    while aantlSterren > 0:
+        print("**", end="")
+        aantlSterren -= 2
+    print()
+    Lijnen += 1
 
 
 
